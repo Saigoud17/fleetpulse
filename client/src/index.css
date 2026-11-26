@@ -1,0 +1,67 @@
+:root {
+  --bg-canvas: #09090b;
+  --bg-surface: rgba(20, 20, 24, 0.86);
+  --bg-surface-solid: #141418;
+  --bg-elevated: rgba(30, 30, 36, 0.9);
+  --border-subtle: rgba(255, 255, 255, 0.09);
+  --border-glow: rgba(249, 115, 22, 0.45);
+
+  --text-primary: #fafafa;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+
+  /* Industrial Freight & Cold-Chain Palette (Zero Generic SaaS Blue) */
+  --accent-orange: #f97316;
+  --accent-amber: #fbbf24;
+  --accent-lime: #a3e635;
+  --accent-mint: #2dd4bf;
+  --accent-crimson: #f43f5e;
+  --accent-purple: #c084fc;
+
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-canvas);
+  background-image:
+    radial-gradient(circle at 10% 6%, rgba(249, 115, 22, 0.14), transparent 36%),
+    radial-gradient(circle at 90% 12%, rgba(163, 230, 53, 0.09), transparent 34%),
+    radial-gradient(circle at 50% 96%, rgba(45, 212, 191, 0.07), transparent 42%),
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
