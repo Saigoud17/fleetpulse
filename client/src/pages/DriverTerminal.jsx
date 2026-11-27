@@ -12,7 +12,7 @@ import {
     Compass,
 } from 'lucide-react';
 
-const API = 'http://localhost:5000/api';
+const API = '/api';
 
 export default function DriverTerminal({ user }) {
     const [assignment, setAssignment] = useState(null);

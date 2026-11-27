@@ -13,7 +13,7 @@ import {
     AlertTriangle,
 } from 'lucide-react';
 
-const API = 'http://localhost:5000/api';
+const API = '/api';
 
 export default function ShipmentsPod({ shipments, onRefresh, user }) {
     const [selectedShipment, setSelectedShipment] = useState(null);

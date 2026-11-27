@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Shield, Users, Check, X, UserPlus } from 'lucide-react';
 
-const API = 'http://localhost:5000/api';
+const API = '/api';
 
 export default function RbacAdmin({ currentUser, onUserUpdated }) {
     const [matrix, setMatrix] = useState(null);

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { MapPin, Truck, PlusCircle, Snowflake, Wrench, CheckCircle2 } from 'lucide-react';
 
-const API = 'http://localhost:5000/api';
+const API = '/api';
 
 export default function FleetAssets({ hubs, vehicles, onRefresh }) {
     // Hub Form State
@@ -433,4 +433,4 @@ export default function FleetAssets({ hubs, vehicles, onRefresh }) {
             </div>
         </div>
     );
-}
+} 

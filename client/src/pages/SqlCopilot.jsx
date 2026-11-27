@@ -2,7 +2,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { Terminal, Play, Sparkles, Database, ShieldAlert, Download } from 'lucide-react';
 
-const API = 'http://localhost:5000/api';
+const API = '/api';
 
 const PRESET_QUERIES = [
     'Show all active shipments with origin, destination, vehicle plate, and live cargo temperature',
